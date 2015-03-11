@@ -6,8 +6,8 @@
     <groupId>com.mtn.training</groupId>
     <artifactId>ci-training</artifactId>
     <packaging>jar</packaging>
-    <version>1.0-SNAPSHOT-${maven.build.timestamp.format}</version>
-    <name>myproje</name>
+    <version>1.0</version>
+    <name>myproject</name>
     
     <properties>
           <timestamp>${maven.build.timestamp}</timestamp>
@@ -29,6 +29,7 @@
     </dependencies>
     
     <build>
+    <finalName>myproject-${maven.build.timestamp}</finalName>
         <plugins>
     	     <plugin>
              <artifactId>maven-clean-plugin</artifactId>
@@ -78,4 +79,5 @@
 		</plugin>
 	    </plugins>
 	</build>
+	
 </project>
